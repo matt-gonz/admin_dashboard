@@ -144,8 +144,17 @@ button:active{
 }
 
 .card{
-  border-radius: 15px;
+  display: grid;
+  align-content: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  border-left: 8px goldenrod solid;
+  padding: 20px;
   background-color: olive;
+}
+
+.card-title{
+  font-weight: bold;
 }
 
 .announcements{
