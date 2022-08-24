@@ -118,12 +118,34 @@ button:active{
 .main-content{
   display: grid;
   grid-template-columns: 3fr 1fr;
+  overflow: auto;
   background-color: brown;
 }
 
 .projects{
   grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  padding: 20px;
   background-color: lavender;
+}
+
+.section-title{
+  display: grid;
+  align-items: center;
+}
+
+.cards-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 250px;
+  gap: 20px;
+  background-color: palevioletred;
+}
+
+.card{
+  border-radius: 15px;
+  background-color: olive;
 }
 
 .announcements{
