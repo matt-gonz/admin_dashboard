@@ -116,9 +116,20 @@ button:active{
 }
 
 .main-content{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
   background-color: brown;
 }
 
-a{
-  text-decoration: none;
+.projects{
+  grid-row: 1 / 3;
+  background-color: lavender;
+}
+
+.announcements{
+  background-color: darkslategrey;
+}
+
+.trending{
+  background-color: gold;
 }
