@@ -60,8 +60,15 @@ body{
 }
 
 .profile-container{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 50px 50px auto;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  padding-left: 80px;
+  font-weight: bold;
   background-color: darkgreen;
-
 }
 
 .welcome-container{
@@ -90,6 +97,7 @@ body{
   gap: 25px;
   align-content: center;
   justify-content: flex-start;
+  padding: 0 20px;
   background-color: darkorange;
 }
 
