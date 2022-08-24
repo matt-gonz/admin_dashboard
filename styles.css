@@ -36,9 +36,61 @@ body{
   font-weight: bold;
 }
 
-.heading{
+.header{
   background-color: aqua;
   grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.search-container{
+  background-color: cornflowerblue;
+}
+
+.profile-container{
+  background-color: darkgreen;
+
+}
+
+.welcome-container{
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  background-color: darkorchid;
+}
+
+.welcome-greeting{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.welcome-name{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btns-container{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template: 40px / repeat(3, 100px);
+  gap: 25px;
+  align-content: center;
+  justify-content: flex-start;
+  background-color: darkorange;
+}
+
+button{
+  border-radius: 30px;
+  border: none;
+  background-color: darkcyan;
+}
+
+button:hover{
+  background-color: rgb(1, 189, 189);
+}
+
+button:active{
+  background-color: rgb(1, 236, 236);
 }
 
 .main-content{
