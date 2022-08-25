@@ -23,7 +23,7 @@ body{
   grid-template-rows: 50px 1fr 2fr;
   align-content: flex-start;
   gap: 40px;
-  padding: 20px;
+  padding: 30px;
   color: white;
 }
 
@@ -32,9 +32,32 @@ body{
   font-weight: bold;
 }
 
-.navigation,
+.navigation{
+  font-weight: bold;
+  display: grid;
+  gap: 20px;
+}
+
 .branding{
   font-weight: bold;
+  display: grid;
+  align-items: flex-start;
+  grid-template-rows: repeat(3, 50px);
+  padding-top: 20px;
+}
+
+.nav-items,
+.branding-items{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-items > img,
+.branding-items > img{
+  filter: invert(100%) sepia(94%) saturate(620%) hue-rotate(304deg) brightness(124%) contrast(107%);
 }
 
 .header{
