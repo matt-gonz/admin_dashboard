@@ -117,9 +117,8 @@ button:active{
 
 .main-content{
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template: 500px 375px / 3fr 1fr;
   overflow: auto;
-  background-color: brown;
 }
 
 .projects{
@@ -191,5 +190,24 @@ hr{
 }
 
 .trending{
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  padding: 20px;
   background-color: gold;
+}
+
+.users-container{
+  display: grid;
+  align-content: flex-start;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 20px;
+  background-color: aquamarine;
+}
+
+.user{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 75px 1fr;
+  gap: 20px;
 }
