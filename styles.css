@@ -216,8 +216,8 @@ button:active{
 hr{
   height: 5px;
   border-width: 2px 0 0 0;
+  border-color: rgba(199, 199, 199, 0.288);
   margin-top: 10px;
-  color: grey;
 }
 
 .trending{
